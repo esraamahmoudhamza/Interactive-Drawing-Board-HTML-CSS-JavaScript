@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background: #0a0a1a;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+  overflow: hidden;
+}
+#toolbar {
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #6a4cff;
+  color: white;
+  box-shadow: 0 0 10px #b388ff;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #b388ff;
+}
+#colorPicker, #brushSize {
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+canvas {
+  background: #0a0a1a;
+  border: 3px solid #6a4cff;
+  box-shadow: 0 0 30px #6a4cff;
+  border-radius: 15px;
+  display: block;
+  cursor: crosshair;
+}
+#eraseCursorCircle {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #b388ff;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 15px #b388ff;
+  display: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#textInput {
+  position: fixed;
+  display: none;
+  background: rgba(10,10,26,0.9);
+  color: white;
+  border: 2px solid #b388ff;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 5px 8px;
+  resize: none;
+  outline: none;
+  box-shadow: 0 0 15px #b388ff;
+  max-width: 300px;
+  max-height: 150px;
+  z-index: 10000;
+}
